@@ -2,6 +2,25 @@ apiVersion: v1
 entries:
   kspm-operator:
   - apiVersion: v2
+    appVersion: 0.1.29
+    created: "2026-06-15T11:54:58.049921165Z"
+    dependencies:
+    - condition: serviceScanConfig.enabled
+      name: kubescape-service-scan-crd
+      repository: file://../dependency_chart/servicescanresult-crds
+      version: 0.0.1
+    - name: kubescape-operator-command-crd
+      repository: file://../dependency_chart/operatorcommand-crds
+      version: 0.0.2
+    description: Mitigant Operator for cluster and container scans
+    digest: af051bc6c8298a1550cc7168a708c57d54da7cc7218b5076f2b70e559e7fc3ec
+    home: https://www.mitigant.io/
+    name: kspm-operator
+    type: application
+    urls:
+    - https://mitigant.github.io/helm-charts/kspm-operator-0.1.29.tgz
+    version: 0.1.29
+  - apiVersion: v2
     appVersion: 0.1.28
     created: "2025-09-30T07:00:00.304513896Z"
     dependencies:
@@ -181,4 +200,4 @@ entries:
     urls:
     - https://mitigant.github.io/helm-charts/kspm-operator-0.1.16.tgz
     version: 0.1.16
-generated: "2025-09-30T07:00:00.293254865Z"
+generated: "2026-06-15T11:54:58.045529312Z"
